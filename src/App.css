@@ -1,3 +1,52 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: 0;
+}
+
 .App {
+	font-size: 16px;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+	background-color: black;
+}
+ul {
+	display: flex;
+	list-style-type: none;
+}
+li {
+	flex-grow: 1;
+}
+
+a {
+	display: block;
 	text-align: center;
+	padding: 10px 15px;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-bottom: 5px solid black;
+	font-weight: 600;
+	transition: 0.5s;
+}
+
+a:hover {
+	border-bottom: 5px solid white;
+	background-color: white;
+	color: black;
+	transition: 0.5s;
+	font-weight: 600;
+}
+section {
+	padding-top: 30px;
+	text-align: center;
+}
+
+.active {
+	border-bottom: 5px solid rgb(162, 221, 221);
+	color: rgb(162, 221, 221);
+	transition: 0.5s;
+	font-weight: 600;
 }
